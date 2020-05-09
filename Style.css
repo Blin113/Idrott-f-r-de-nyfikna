@@ -1,0 +1,373 @@
+	html, body
+	{
+		font-family: Helvetica;
+		height:100vh;
+		width:100%;
+		margin:0;
+		padding:0;
+		background-color: rgb(38, 53, 92);
+		overflow-x: hidden;
+	}
+
+	ul 
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: rgb(13, 15, 22) ;	
+		display: flex;
+	}
+
+	li a 
+	{
+		display: block;
+		color: #f0f0f0;
+		background-color: rgb(34, 46, 77);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	
+	li a.active
+	{
+		background-color: rgb(64, 74, 97);
+	}
+
+	li a:hover
+	{
+		background-color:  rgb(25, 27, 36);
+	}
+	
+	li:nth-child(1)
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	li:last-child
+	{
+		margin-right: 20%;
+	}
+	
+	h1
+	{
+		font-size: 30px;
+		padding: 10px;
+		margin: 0;
+	}
+
+	h1.rubrik
+	{
+		padding-left: 1em;
+	}
+
+/*...............header css...............*/ 
+	header
+	{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		color: white;
+		background-color: rgb(22, 26, 36);
+		display: block;
+		width: 100vw;
+	}
+
+	header li:nth-child(2)		/*ändrar fonts till andra tredje och fjärde listelementet*/ 
+	{
+		font-family: 'Anoxic-Light';
+		font-size: 1.3em;
+	}
+
+	header li:nth-child(3)		/*ändrar fonts till andra tredje och fjärde listelementet*/ 
+	{
+		font-family: 'go3v2';
+		font-size: 1em;
+	}
+
+	header li:nth-child(4)		/*ändrar fonts till andra tredje och fjärde listelementet*/ 
+	{
+		font-family: 'Modern-Fantasy-DEMO';
+		font-size: 0.9em;
+	}
+
+/*...............dropdown css...............*/ 
+	.dropdown 
+	{
+		display: none;
+		position: absolute;
+		top: 100%;
+		z-index: 10;
+		left: 0;
+		
+	}
+	
+	li
+	{
+		position: relative;
+	}
+
+	li:hover .dropdown	/*visar dropdown på menyn när du har musen över den*/ 
+	{
+		display: inline-block;
+	}
+
+/*...............Grid css...............*/ 
+
+	main	/*grid bas*/ 
+	{
+		font-family: Helvetica, sans-serif;
+		display: grid;
+		grid-template-areas: 
+			'left content right'
+			'left middle right'
+			'left bottom right'
+			'left bottom2 right';
+
+		grid-template-columns: 33vw 33vw 33vw;
+		grid-template-rows: auto auto auto;
+	}
+
+	section		/*utdelning av grid area*/ 
+	{
+		grid-area: content;
+		margin-bottom: 10vw;
+	}
+
+	section.bottom		/*justering av grid area med användning av klassen bottom*/ 
+	{
+		grid-area: bottom;
+		padding: 0;
+		padding-bottom: 15vw;
+	}
+
+	section.bottom2		/*justering av grid area med användning av klassen bottom2*/ 
+	{
+		grid-area: bottom2;
+		padding: 0;
+	}
+
+	article		/*utdelning av grid area*/ 
+	{
+		grid-area: middle;
+		background-color: rgb(185, 184, 197);
+		margin-top: 5vw;
+		margin-bottom: 10vw;
+		border-radius: 10px;
+	}
+
+	article.articleadjust	/*justering av grid area med användning av klassen articleadjust*/
+	{
+		border-radius: 0px;
+		padding: 1em;
+		margin-bottom: 5vw;
+	}
+
+	footer
+	{
+		background-color: rgb(37, 42, 61);
+		height: 11vw;
+		padding-bottom: 2vw;
+	}
+
+	.footerhead
+	{
+		padding-left: 1%;
+		padding-top: 1%;
+		font-size: 1.5em;
+		color: whitesmoke;
+	}
+
+	.footertxt
+	{
+		font-size: 1em;
+		padding-top: 0em;
+		padding-left: 1%;
+		margin-top: 0em;
+		color: whitesmoke;
+	}
+
+/*css klasser och regler för utplaceringa av text och bild*/ 
+	.infoimg
+	{
+		width: 96%;
+		padding: 0.7vw;
+	}
+
+	.info
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+		
+	}
+
+	.historyimg
+	{
+		padding-left: 2em;
+		width: 50%;
+		float: left;
+		margin-right: 1em;
+		padding-bottom: 1em;
+	}
+
+	.history
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+
+	}
+
+	.text
+	{
+		margin-top: 10vw;
+		padding: 2em;
+		color: whitesmoke;
+	}
+	
+	.moretext
+	{
+		padding-left: 2em;
+		color: whitesmoke;
+	}
+
+	.tennisimg
+	{
+		width: 100vw;
+		margin-left: -100%;
+		height: 10vw;
+		padding: 0;
+	}
+
+	.oldtennisimg
+	{
+		width: 12em;
+		float: right;
+	}
+
+	.badmintonimg
+	{
+		width: 100%;
+	}
+
+	.oldbadmintonimg
+	{
+		width: 100%;
+	}
+
+	.badmintontxt
+	{
+		margin-top: 0;
+		color: whitesmoke;
+	}
+
+	table, th, td 
+	{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	table
+	{
+		width: 100%;
+		height: 10vw;
+	}
+
+	th
+	{
+		background-color: whitesmoke;
+	}
+
+	tr:nth-child(odd)
+	{
+		background-color: lightgray;
+	}
+
+	tr:nth-child(even)
+	{
+		background-color: gray;
+	}
+
+	caption
+	{
+		background-color: antiquewhite;
+	}
+
+	ol
+	{
+		padding-left: 3em;
+		color: whitesmoke;
+	}
+
+	audio
+	{
+		width: 100%;
+	}
+
+/*..............formulär css..............*/
+
+	form
+	{
+		grid-area: right;
+		margin-left: 5vw;
+		background-color: rgb(185, 184, 197);
+		margin-top: 5vw;
+		padding: 0.5em;
+		width: 200px;
+		margin-bottom: auto;
+	}
+
+/*...............iframe css...............*/
+
+	.iframe-container 
+	{
+		overflow: visible;
+		padding-top: 56.25%;
+		position: relative;
+		padding: 2em;
+	}
+
+	.iframe-container iframe 
+	{
+		border: 0;
+		height: 20vw;
+		width: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+
+/*...............scrollbar css...............*/
+	body::-webkit-scrollbar {
+		width: 10px;
+		overflow: hidden;
+	}
+
+	body::-webkit-scrollbar-track {
+		box-shadow: transparent;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background: grey;
+		outline: 1px solid slategrey;
+	}
+
+
+/*.................nedladdade fonter................*/
+	@font-face { 
+
+		font-family: 'Anoxic-Light';
+		src: url('Anoxic-Light.ttf') format('truetype');
+	}
+
+	@font-face { 
+
+		font-family: 'go3v2';
+		src: url('go3v2.ttf') format('truetype');
+	}
+
+	@font-face { 
+
+		font-family: 'Modern-Fantasy-DEMO';
+		src: url('Modern Fantasy DEMO.otf') format('opentype');
+	}
