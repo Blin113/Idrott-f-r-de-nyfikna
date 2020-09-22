@@ -4,7 +4,7 @@
 	<head>
         
         <meta charset="utf-8">			<!--teckenkodning på sidan-->
-        <title>Idrott för de nyfikna</title>				<!--titel på sidan-->
+        <title>Idrott för de nyfikna - Hem</title>				<!--titel på sidan-->
         <link href = "style.css" rel="stylesheet" type="text/css">
         
     </head>
@@ -43,24 +43,40 @@
 				<p>prenumerera till vårat nyhetsbrev:</p>
 
 				<label for="fname">förnamn:</label><br>
-					<input type="text" id="fname" name="fname"><br><br>
+					<input type="text" id="fname" name="fname"><br><br>		<!--input till form-->
 					  
   				<label for="lname">efternamn:</label><br>
-					<input type="text" id="lname" name="lname"><br><br>
+					<input type="text" id="lname" name="lname"><br><br>		<!--input till form-->
 
 				<label for="email">email:</label><br>
-					<input type="text" id="email" name="email"><br><br>
+					<input type="text" id="email" name="email"><br><br>		<!--input till form-->
 
-				<input type="radio" id="male" name="gender" value="male">
+				<label for="Password">lösenord:</label><br>
+					<input type="password" id="Password" name="Password"><br><br>		<!--input till form-->
+
+				<input type="radio" id="male" name="gender" value="male">		<!--input till form-->
 					<label for="male">Man</label><br>
-
-				<input type="radio" id="female" name="gender" value="female">
+					
+				<input type="radio" id="female" name="gender" value="female">		<!--input till form-->
 					<label for="female">Kvinna</label><br>
-
-				<input type="radio" id="other" name="gender" value="other">
+					
+				<input type="radio" id="other" name="gender" value="other">			<!--input till form-->
 					<label for="other">Annan</label><br><br>
+				
+				<p>Vilka sporter är du intesserad av?</p>
+				
+				<input type="checkbox" id="Tennis" name="interest" value="Tennis">			<!--input till form-->
+					<label for="Tennis">Tennis</label><br>
 
-				<input type="submit" value="Submit">
+				<input type="checkbox" id="Kung-Fu" name="interest" value="Kung-Fu">			<!--input till form-->
+					<label for="other">Kung-Fu</label><br>
+
+				<input type="checkbox" id="Badminton" name="interest" value="Badminton">			<!--input till form-->
+					<label for="other">Badminton</label><br><br>
+
+				<textarea name="comment">Annan...</textarea><br><br>
+
+				<input type="submit" value="Submit">		<!--input till form-->
 					  
 			</form>
 
@@ -68,20 +84,24 @@
 				
 				<a><img class="infoimg" src="info.jpg" alt="bild"></a>
 
-				<h1 class="rubrik">Idrott för de nyfikna</h1>
+				<h2 class="rubrik">Idrott för de nyfikna</h2>
 
 				<p class="info">Idrott är en produkt av lek och spel. Lek anses gärna vara en frivillig verksamhet utan fasta regler och utan någon historia. När en lek blir mer formaliserad, det vill säga får ett regelverk och en historia kan man börja prata om ett spel. Vi skiljer mellan tre olika sorters spel. Färdighetsspel är en form av spel där deltagarnas färdigheter är avgörande för resultatet. Chansspel är spel där tillfälligheter och slumpen bestämmer utgången. Samarbetsspel är spel där deltagarna måste samarbeta inbördes för att nå på förhand formulerade mål. Idrott är en kombination av alla dessa tre spelformer. De olika spelformernas vikt varierar från idrott till idrott och, inte minst, från situation till situation. Graden av samarbete är större i en lagidrott än i en individuell idrott och det är primärt utövarens färdighet som ska mätas. Dock kan yttre omständigheter göra att slumpen spelar en avgörande roll. Snabba väderomslag i skididrott är ett exempel på detta.</p>
 
 				<a><img class="historyimg" src="history.jpg" alt="bild"></a>
 
-				<p class="history">Sport, idrott och tävlingar fanns redan i människornas äldre civilisationer, till exempel antas det baserat på fynd ha pågått sportaktiviteter i Kina kring 2 000 före Kristus. Andra äldre civilisationer där man antar att sport och idrott utövats är det gamla Egypten och Grekland.</p>
+				<p class="info">Sport, idrott och tävlingar fanns redan i människornas äldre civilisationer, till exempel antas det baserat på fynd ha pågått sportaktiviteter i Kina kring 2 000 före Kristus. Andra äldre civilisationer där man antar att sport och idrott utövats är det gamla Egypten och Grekland.</p>
 
 				<br /><br />
+
 				<p class="info">Lite musik medans du läser?</p>
-				<audio controls>			<!--ljudklipp se css för width-->
+				
+				<audio id="audio" controls>			<!--ljudklipp se css för width(rick rolled)-->
 					<source src="Rick Astley - Never Gonna Give You Up (Video).mp3" type="audio/mpeg">
 				  Your browser does not support the audio element.
 				</audio>
+				
+				<p><a class="info" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">source</a></p>		<!--Love Focus Hate-->
 
 			</article>
 
@@ -89,11 +109,11 @@
 		
 
 		<footer>		<!--footer densamma på alla sidor se css för styling-->
-			<h2 class="footerhead">Idrott för de nyfikna av: Armin</h2>
+			<h2>Idrott för de nyfikna av: Armin</h2>
 
-			<p class="footertxt">Idrott för de nyfikna är en sida som är menad att ge en liten inblick till hur olika sporter tillkommit och vad dem innebär.</p>
+			<p>Idrott för de nyfikna är en sida som är menad att ge en liten inblick till hur olika sporter tillkommit och vad dem innebär.</p>
 		
-			<p class="footertxt">email: arre02002@utb.vaxjo.se</p>
+			<p>email: arre02002@utb.vaxjo.se</p>
 		</footer>
 		
 		

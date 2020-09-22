@@ -1,4 +1,5 @@
-	html, body
+/*lägger grund regler för min sida*/ 
+	body	
 	{
 		font-family: Helvetica;
 		height:100vh;
@@ -57,7 +58,7 @@
 		margin: 0;
 	}
 
-	h1.rubrik
+	.rubrik
 	{
 		padding-left: 1em;
 	}
@@ -96,7 +97,7 @@
 	.dropdown 
 	{
 		display: none;
-		position: absolute;
+		position: absolute;		/*används så att mina dropdown items ska visas separat från resten av menyn, utanför*/
 		top: 100%;
 		z-index: 10;
 		left: 0;
@@ -105,7 +106,7 @@
 	
 	li
 	{
-		position: relative;
+		position: relative;		/*änvänds för att dropdown menyerna ska visas på rätt ställe*/
 	}
 
 	li:hover .dropdown	/*visar dropdown på menyn när du har musen över den*/ 
@@ -171,7 +172,7 @@
 		padding-bottom: 2vw;
 	}
 
-	.footerhead
+	footer h2
 	{
 		padding-left: 1%;
 		padding-top: 1%;
@@ -179,7 +180,7 @@
 		color: whitesmoke;
 	}
 
-	.footertxt
+	footer p
 	{
 		font-size: 1em;
 		padding-top: 0em;
@@ -199,7 +200,6 @@
 	{
 		padding-left: 2em;
 		padding-right: 2em;
-		
 	}
 
 	.historyimg
@@ -209,13 +209,6 @@
 		float: left;
 		margin-right: 1em;
 		padding-bottom: 1em;
-	}
-
-	.history
-	{
-		padding-left: 2em;
-		padding-right: 2em;
-
 	}
 
 	.text
@@ -234,7 +227,7 @@
 	.tennisimg
 	{
 		width: 100vw;
-		margin-left: -100%;
+		margin-left: -100%;		/*if it works don't touch it.*/
 		height: 10vw;
 		padding: 0;
 	}
@@ -246,11 +239,6 @@
 	}
 
 	.badmintonimg
-	{
-		width: 100%;
-	}
-
-	.oldbadmintonimg
 	{
 		width: 100%;
 	}
@@ -299,7 +287,7 @@
 		color: whitesmoke;
 	}
 
-	audio
+	#audio
 	{
 		width: 100%;
 	}
@@ -323,7 +311,7 @@
 	{
 		overflow: visible;
 		padding-top: 56.25%;
-		position: relative;
+		position: relative;		/*placerar mina iframes på rätt ställe*/
 		padding: 2em;
 	}
 
@@ -332,42 +320,70 @@
 		border: 0;
 		height: 20vw;
 		width: 100%;
-		position: absolute;
+		position: absolute;		/*används för att hela videon i iframen ska visas*/
 		top: 0;
 	}
 
 
 /*...............scrollbar css...............*/
-	body::-webkit-scrollbar {
+	body::-webkit-scrollbar 	/*används för att ändra utseendet på scrollbaren i chrome*/
+	{
 		width: 10px;
 		overflow: hidden;
 	}
 
-	body::-webkit-scrollbar-track {
+	body::-webkit-scrollbar-track 		/*används för att ändra utseendet på rälsen till scrollbaren i chrome*/
+	{
 		box-shadow: transparent;
 	}
 
-	body::-webkit-scrollbar-thumb {
+	body::-webkit-scrollbar-thumb 		/*används för att ändra utseendet på scrollbaren i chrome*/
+	{
 		background: grey;
 		outline: 1px solid slategrey;
 	}
 
 
 /*.................nedladdade fonter................*/
-	@font-face { 
+	@font-face 
+	{ 
 
 		font-family: 'Anoxic-Light';
 		src: url('Anoxic-Light.ttf') format('truetype');
 	}
 
-	@font-face { 
+	@font-face 
+	{ 
 
 		font-family: 'go3v2';
 		src: url('go3v2.ttf') format('truetype');
 	}
 
-	@font-face { 
+	@font-face 
+	{ 
 
 		font-family: 'Modern-Fantasy-DEMO';
 		src: url('Modern Fantasy DEMO.otf') format('opentype');
+	}
+
+/*Love Focus Hate*/
+
+	p a:link 
+	{
+		color: rgb(0, 0, 0);
+	}
+
+	p a:visited 
+	{
+		color: rgb(58, 51, 112);
+	}
+
+	p a:hover 
+	{
+		color: rgb(107, 165, 52);
+	}
+
+	p a:active 
+	{
+		color: rgb(110, 27, 27);
 	}
